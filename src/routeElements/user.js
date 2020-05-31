@@ -5,7 +5,7 @@ const router = new express.Router();
 const multer = require("multer");
 const {sendWelcomeMail}=require('../emails/account');
 const {sendExitMail}=require('../emails/account')
-
+const sharp=require('sharp')
 
 const upload = multer({
   limits: {
